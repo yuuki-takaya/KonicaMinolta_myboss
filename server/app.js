@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 
 const index = require('./routes/index');
 const users = require('./routes/users');
+const registration = require('./routes/registration');
 
 const http = require('http');
 const mongoose = require('mongoose');
@@ -15,7 +16,7 @@ const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'ejs');
 
 const mongodbUri = "mongodb://localhost/kmhack";
 const mongOptions = {
@@ -35,6 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/registration',registration);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
