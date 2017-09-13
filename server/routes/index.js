@@ -5,7 +5,7 @@ var User = require('../models/user');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { Hello: 'Express' });
+  res.render('index', { Hello: 'test' });
 });
 
 router.post('/login', function(req, res, next) {
@@ -15,7 +15,7 @@ router.post('/login', function(req, res, next) {
   
 
 
-  res.render('index', { Hello: 'Success' });
+  res.render('index.ejs', { Hello: 'Success' });
 });
 
 
