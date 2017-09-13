@@ -5,9 +5,12 @@ $(document).ready(function(){
     var shaObj;
     var sha256digest; 
    
-
+    //SignUpボタンが押された時の処理
+     $("#signup").click(function(){
+        document.location = '/registration';
+    });
     // ログインボタンが押された時の処理
-    $("#send").click(function(){
+    $("#login").click(function(){
         if($("#userid").val() !="" && $("#password").val() !=""){
             userID = $("#userid").val();
             password = $("#password").val();
@@ -16,6 +19,14 @@ $(document).ready(function(){
             shaObj.update(src_text);
             //ここにハッシュ生成してDBに送信
             $("#text").text(shaObj.getHash("HEX"));
+
+            loginData = {
+                userid: userID,
+                password: password,
+                hash: shaObj.getHash("HEX")
+            }
+
+            $.get('/login',loginData);
             
         
         //UserIDが入力されていない場合の処理

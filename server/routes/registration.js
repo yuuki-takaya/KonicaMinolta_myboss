@@ -33,7 +33,7 @@ router.post('/', function(req, res, next) {
     console.log(req.body.userid);
     console.log(req.body.password);
     console.log(req.body.hash);
-
+    res.redirect('/');
     var username = req.body.username;
     var userid = req.body.userid;
     var password = req.body.password
@@ -41,7 +41,7 @@ router.post('/', function(req, res, next) {
 
     User.find({ "hash" : hash }, function(err, result){
         if (err)console.log(err);
-
+        
         if(result.length == 0){
             var user = new User();
             user.username = username;

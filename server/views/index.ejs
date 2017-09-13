@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Face Tracking Web Camera Demo</title>
+	<title>KonicaMinolta Hackathon</title>
 
 	<link rel="stylesheet" href="/stylesheets/normalize.css">
 	<link rel="stylesheet" href="/stylesheets/common.css">
@@ -11,43 +11,24 @@
 
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="/javascripts/JQuery-PeriodicalUpdater/jquery.periodicalupdater.js" type="text/javascript"></script>
-	<!--<script type="text/javascript" src="/javascripts/prototype.js"></script>-->
-	<script src="/javascripts/clmtrackr/stats.min.js"></script>
-	<script src="/javascripts/clmtrackr/clmtrackr.js"></script>
-	<script src="/javascripts/model/model_pca_20_svm.js"></script>
-	<script defer src="/javascripts/index.js"></script>
+	<script type="text/javascript" src="/javascripts/sha/sha256.js"></script>
+    <script type="text/javascript" src="/javascripts/login.js"></script>
+	
 </head>
 <body>
-<div id="wrapper">
-	<div id="inner">
-		<div id="drawArea">
-			<img id="loading" src="/images/loading.svg" alt="">
-			<video id="video"></video>
-			<canvas id="wireframe"></canvas>
-			<button id="btn">顔認識</button>
-		</div>
-		<div id="ui">
-			<!--<input type="button" value="Exec" onclick="OnButtonClick();"/>-->
-			<p id="log"></p>
-			<p id="location2"></p>
-			<p id="location3"></p>
-			<p id="location4"></p>
-			<p id="location5"></p>
-		</div>
-	</div>
-</div>
+	<h1 id="text">Hello World</h1>
+	<h2><%= Hello %></h2>
+
+        
+    <form id="Login">
+        User ID:<input id="userid" type="text" name="userID" value=""><br>
+        Pass Word:<input id="password" type="password" name="password" value=""><br>
+        <input id="login" type="button" value="Sign In" > 
+	</form>
+	
+	<input id="signup" type="button" value="Sign Up" > 
+	
+	
 </body>
-</html>
-
-
-
-	
-
-
-
-
-	
-      </body>
 </html>	
 	                                                                                                                  
