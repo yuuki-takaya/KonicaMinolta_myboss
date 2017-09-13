@@ -33,7 +33,7 @@ router.post('/', function(req, res, next) {
     console.log(req.body.userid);
     console.log(req.body.password);
     
-    res.redirect('/');
+    res.redirect('/main');
     var username = req.body.username;
     var userid = req.body.userid;
     var password = req.body.password
@@ -54,7 +54,7 @@ router.post('/', function(req, res, next) {
             });
 
             console.log("regist to DB");
-            res.redirect('/');
+            res.redirect('/main');
         }else{
             console.log("Already registrated");
             res.render('registration', { Hello: 'Already registrated' });

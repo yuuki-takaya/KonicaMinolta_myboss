@@ -15,7 +15,7 @@ router.post('/login', function(req, res, next) {
   
 
 
-  res.render('index.ejs', { Hello: 'Success' });
+  res.redirect('/main');
 });
 
 
