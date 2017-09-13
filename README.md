@@ -10,7 +10,7 @@
 
 
 ## DB設計(*はprimary)
-###User
+### User
 |		|userid*	|password	|username	|
 |:--	|:--		|:--		|:--		|
 |型 	|String		|String  	|String		|
