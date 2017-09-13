@@ -14,19 +14,13 @@ $(document).ready(function(){
         if($("#userid").val() !="" && $("#password").val() !=""){
             userID = $("#userid").val();
             password = $("#password").val();
-            shaObj = new jsSHA("SHA-256", "TEXT", 1);
-            src_text=userID+password;
-            shaObj.update(src_text);
-            //ここにハッシュ生成してDBに送信
-            $("#text").text(shaObj.getHash("HEX"));
 
             loginData = {
                 userid: userID,
-                password: password,
-                hash: shaObj.getHash("HEX")
+                password: password
             }
 
-            $.get('/login',loginData);
+            $.post('/login',loginData);
             
         
         //UserIDが入力されていない場合の処理

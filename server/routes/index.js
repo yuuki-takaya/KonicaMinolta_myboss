@@ -5,16 +5,17 @@ var User = require('../models/user');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { Hello: 'Express' });
+  res.render('index', { Hello: 'test' });
 });
 
-router.get('login', function(req, res, next) {
+router.post('/login', function(req, res, next) {
   console.log("catch the get request");
   res.setHeader('Content-Type', 'text/plain');
+  console.log(req.body);
+  
 
-  console.log(req.body.userid);
-  console.log(req.body.password);
-  console.log(req.body.hash);
+
+  res.render('index.ejs', { Hello: 'Success' });
 });
 
 

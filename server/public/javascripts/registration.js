@@ -13,16 +13,12 @@ $(document).ready(function(){
             username = $("#username").val();
             userid = $("#userid").val();
             password = $("#password").val();
-            shaObj = new jsSHA("SHA-256", "TEXT", 1);
-            src_text=userID+password;
-            shaObj.update(src_text);
-            //ここにハッシュ生成してDBに送信
-            $("#text").text(shaObj.getHash("HEX"));
+            
             postData = {
                 "username":username,
 		        "userid":userid,
                 "password":password,
-                "hash":shaObj.getHash("HEX")
+                
             }
 
             $.post('/registration',postData);
