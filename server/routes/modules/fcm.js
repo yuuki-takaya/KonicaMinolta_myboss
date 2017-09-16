@@ -34,8 +34,8 @@ module.exports = function(query, mesg){
 	method: 'POST',
 	headers: header,
 	json: {
-	    'to': '/topics/Attendance_Android',
-	    // 'to': token,
+	    // 'to': '/topics/Attendance_Android',
+	    'to': token,
 	    'notification': data // for notification
 	    // 'data': data      // for data
 	}

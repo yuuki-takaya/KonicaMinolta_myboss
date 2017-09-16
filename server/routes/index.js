@@ -11,9 +11,9 @@ router.post('/registration', function(request, response){
     console.log('catch the register request');
     response.setHeader('Content-Type', 'application/json');
 
-    var userid = request.query.userid;
-    var token  = request.query.token;
-    var team   = request.query.team;
+    var userid = request.body.userid;
+    var token  = request.body.token;
+    var team   = request.body.team;
     
     User.find({ "userid" : userid }, function(err, result){
 	if (err)
@@ -46,7 +46,7 @@ router.post('/sleeper', function(request, response){
     console.log('catch the sleeper request');    
     response.setHeader('Content-Type', 'application/json');
 
-    var userid = request.query.userid;
+    var userid = request.body.userid;
     var mesg = {
 	message : '眠たくてしょうがない人がいます!\n承認してください!'
     };
@@ -119,7 +119,7 @@ router.post('/accept', function(request, response){
 			    
 			    Team.find({ 'teamName' :  userFindResult[0].team }, function(err, teamInfo){
 				// 全員が承認した場合
-				if (teamInfo[0].user.length - 1 == teamInfo[0].userNum){
+				if (teamInfo[0].user.length == teamInfo[0].userNum - 1 ){
 				    // teamInfo[0].userの時間比較および寝たい人へpush通知
 				    acceptedPush(teamInfo[0].teamName, teamInfo[0].user, function(err){
 					if (err)
