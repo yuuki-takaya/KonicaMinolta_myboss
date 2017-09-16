@@ -8,6 +8,15 @@
 - 各人開発後のマージはテスト環境（testブランチ）へマージすること．
 - masterへのマージはtestでの動作確認およびチームメンバ全員の合意が取れ次第行う
 
+## リクエスト
+### 登録
+ - http://_ip_:3000/registration
+ ~~~
+ {
+    userid: String,
+    token : takenID
+ }
+ ~~~
 
 ## DB設計(*はprimary)
 ### User
