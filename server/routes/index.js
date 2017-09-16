@@ -37,8 +37,8 @@ router.post('/registration', function(request, response){
 	    user.save(function(err){
 		if (err) console.log(err);
 	    });
-	    response.json({ 'status' : 200 });
 	}
+	response.json({ 'status' : 200 });
     });
 });
 
