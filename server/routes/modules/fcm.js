@@ -1,12 +1,14 @@
 const request = require('request');
 const utils = require('date-utils');
 
-exports.fcm = function(){
+module.exports = function(query, mesg){
 
     const date = new Date();
     const dateString = date.toFormat("YYYY-MM-DD HH24:MI:SS");
     const url = 'https://fcm.googleapis.com/fcm/send';
     const serverkey = 'AAAAGjtC_Sg:APA91bEWDo1snCljw3iR_0UOp-4pJL13eCoarvbfd4Lbuxq6A6kKI56gOJ-FqRC3nrUtCayZDerqbBM5l7TpVGaQuMMbr3URzQsLQBMJGLmePPtgamoSYxvdo6n9hZWZCkiHm3-9-VW1';
+
+    const token = query;
 
     // data payload for notification
     const data = {
@@ -33,6 +35,7 @@ exports.fcm = function(){
 	headers: header,
 	json: {
 	    'to': '/topics/Attendance_Android',
+	    // 'to': token,
 	    'notification': data // for notification
 	    // 'data': data      // for data
 	}
@@ -47,4 +50,5 @@ exports.fcm = function(){
 	    console.log(error);
 	}
     });
+    return;
 };
