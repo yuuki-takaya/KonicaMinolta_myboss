@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">出席管理                                                     </string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_section1">出席</string>
+    <string name="title_section2">履歴</string>
+    <string name="title_section3">設定</string>
+    <string name="studentInfoTextViewText">学生ID：名前</string>
+    <string name="lectureInfoTextViewText">X講時：講義名</string>
+    <string name="profInfoTextViewText">担当教員 : </string>>
+    <string name="attendanceStatusTextView">出席状況</string>
+    <string name="attendingText">出席</string>
+    <string name="leavingText">退室中</string>
+    <string name="classroom">教室</string>
+    <string name="classroomTextViewText">教室名</string>
+    <string name="attendButtonTextViewText">出席送信</string>
+    <string name="reloadButtonTextViewText">教室確認</string>
+    <string name="loadingTextViewText">起動中・・・</string>
+    <string name="warningTextViewText">本アプリを削除すると、\nサーバとの紐付け解除され\n再度初期設定を行う必要があります。\n本アプリを削除しないで下さい。</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="title_activity_initial_launch">初期設定</string>
+</resources>

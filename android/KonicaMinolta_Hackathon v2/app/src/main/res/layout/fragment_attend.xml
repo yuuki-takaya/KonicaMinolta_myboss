@@ -1,0 +1,136 @@
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.snakahara.myapplication.MainActivity$PlaceholderFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/studentInfoTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/studentInfoTextViewText"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/lectureInfoTextViewText"
+        android:id="@+id/lectureInfoTextView"
+        android:layout_below="@+id/studentInfoTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/profInfoTextViewText"
+        android:id="@+id/profInfoTextView"
+        android:layout_below="@+id/lectureInfoTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:gravity="center" />
+
+    <ImageView
+        android:src="@drawable/q"
+        app:layout_widthPercent="30%"
+        android:id="@+id/attendanceStatusImageView"
+        android:layout_below="@+id/lectureInfoTextView"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        app:layout_widthPercent="42.5%"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/attendanceStatusTextView"
+        android:text="@string/attendanceStatusTextView"
+        android:layout_below="@+id/lectureInfoTextView"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/attendingText"
+        android:id="@+id/attendanceTextView"
+        android:textSize="25sp"
+        android:layout_below="@+id/attendanceStatusTextView"
+        android:layout_alignStart="@+id/attendanceStatusTextView"
+        android:layout_marginTop="3dp"
+        android:layout_alignLeft="@+id/attendanceStatusTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/classroom"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/attendanceTextView"
+        android:layout_alignStart="@+id/attendanceTextView"
+        android:layout_marginTop="25dp"
+        android:layout_alignLeft="@+id/attendanceTextView"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/classroomTextViewText"
+        android:textSize="25sp"
+        android:id="@+id/roomNameTextView"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="3dp"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonclick"
+        android:background="@drawable/line_style"
+        android:text="@string/reloadButtonTextViewText"
+        android:id="@+id/reloadButton"
+        android:layout_below="@+id/roomNameTextView"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonclick"
+        android:background="@drawable/line_style"
+        android:text="@string/attendButtonTextViewText"
+        android:id="@+id/attendButton"
+        android:layout_below="@+id/attendanceStatusImageView"
+        android:layout_alignTop="@+id/reloadButton"
+        android:layout_toRightOf="@+id/reloadButton"
+        android:layout_marginLeft="40dp"
+        android:textSize="20sp" />
+
+
+</android.support.percent.PercentRelativeLayout>

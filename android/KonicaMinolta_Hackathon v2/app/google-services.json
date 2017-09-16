@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "112663395624",
+    "firebase_url": "https://attendance-management-sy-eeaba.firebaseio.com",
+    "project_id": "attendance-management-sy-eeaba",
+    "storage_bucket": "attendance-management-sy-eeaba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112663395624:android:bc273982be789aa6",
+        "android_client_info": {
+          "package_name": "com.example.snakahara.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112663395624-bpvvo57j8kenbcjfh9dg2eebacsqde7e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.snakahara.myapplication",
+            "certificate_hash": "b911132985e427d52caf94e37b1da6b235f30c6a"
+          }
+        },
+        {
+          "client_id": "112663395624-qk2qkr5tps46ds8cd17bqbg6i4d6o8ki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsL-_vgwJn5HPQzCDLugUk7XH4cpzqUo8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112663395624-qk2qkr5tps46ds8cd17bqbg6i4d6o8ki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
