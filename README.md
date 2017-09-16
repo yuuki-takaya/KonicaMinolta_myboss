@@ -11,7 +11,7 @@
 ## リクエスト
 ### 登録
  - http://_ip_:3000/registration
- ~~~
+ ~~~ json
  {
     userid: String,
     token : takenID
