@@ -14,7 +14,8 @@
  ~~~ json
  {
     userid: String,
-    token : String
+    token : String,
+    team  : String
  }
  ~~~
 ### 眠たい
