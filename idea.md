@@ -25,6 +25,8 @@
 * hue
 * drone
 * mesh
+* node.js
+* android Java
 
 ### チームでの課題
 ガジェットのプログラミングでつまずくかもしれないです．．．
