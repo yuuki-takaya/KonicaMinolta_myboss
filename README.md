@@ -14,10 +14,25 @@
  ~~~ json
  {
     userid: String,
-    token : takenID
+    token : String
  }
  ~~~
-
+### 眠たい
+ - http://_ip_:3000/sleeper
+ ~~~ json
+ {
+    userid: String
+ }
+ ~~~
+### 承認
+ - http://_ip_:3000/accept
+ ~~~ json
+ {
+    userid: String,
+    time  : date
+ }
+ ~~~
+ 
 ## DB設計(*はprimary)
 ### User
 
