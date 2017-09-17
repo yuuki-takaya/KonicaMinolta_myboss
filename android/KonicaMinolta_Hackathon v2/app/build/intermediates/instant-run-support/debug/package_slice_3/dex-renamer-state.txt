@@ -1,0 +1,4 @@
+#Sun Sep 17 11:29:27 JST 2017
+base.0=/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3
+renamed.0=classes.dex
+file.0=/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex

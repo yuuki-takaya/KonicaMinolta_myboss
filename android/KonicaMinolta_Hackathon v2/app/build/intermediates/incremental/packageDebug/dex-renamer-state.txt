@@ -1,0 +1,7 @@
+#Sun Sep 17 11:55:26 JST 2017
+base.0=/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_457de9d2468c126df10b3898bdc9413ef7fffbeb
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_80a42d082b3854a494a94f2002f92779dbec4faa/classes.dex
+base.1=/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_80a42d082b3854a494a94f2002f92779dbec4faa
+file.0=/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_457de9d2468c126df10b3898bdc9413ef7fffbeb/classes.dex
