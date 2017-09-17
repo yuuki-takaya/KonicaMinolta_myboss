@@ -17,11 +17,14 @@ module.exports = function(teamName, userArray, callback){
     }
 
     User.find({ $and: query }, function(err, target){
+
+	console.log(target);
+
 	if (err)
 	    console.log(err);
 
-	if (target.length == 0){
-	    fcm( target[0].userid, mesg );
+	if (target.length == 1){
+	    fcm( target[0].token, mesg );
 	}
 	callback(err);
     });

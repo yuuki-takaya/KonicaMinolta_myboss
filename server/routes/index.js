@@ -15,7 +15,7 @@ router.post('/registration', function(request, response){
     var token  = request.body.token;
     var team   = request.body.team;
     
-    User.find({ "userid" : userid }, function(err, result){
+    User.find({ 'userid' : userid }, function(err, result){
 	if (err)
 	    console.log(err);
 
@@ -37,6 +37,16 @@ router.post('/registration', function(request, response){
 	    user.save(function(err){
 		if (err) console.log(err);
 	    });
+	}
+	// tokenIDの書き換え
+	else if (result.length == 1){
+	    User.update(
+		{ 'userid' : userid }, { $set: {'token' : token }},
+		function(err){
+		    if(err)
+			console.log(err);
+		});
+
 	}
 	response.json({ 'status' : 200 });
     });

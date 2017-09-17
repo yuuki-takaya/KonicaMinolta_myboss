@@ -8,7 +8,9 @@ module.exports = function(teamName){
 	if (err)
 	    console.log(err);
 
-	User.find({ 'userid' : result[0].userid }, function(err, firstUser){
+	// console.log(result);
+
+	User.find({ 'userid' : result[0].user[0].userid }, function(err, firstUser){
 	    if(err)
 		console.log(err);
 
