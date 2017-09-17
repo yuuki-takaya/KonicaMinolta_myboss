@@ -4,6 +4,12 @@ const fcm  = require('./fcm');
 
 module.exports = function(teamName, userArray, callback){
     
+    var mesg = {
+	id : '3',
+	label : 'あなたのお昼寝は承認されました',
+	text  : '存分に寝て生産性向上に努めましょう'
+    };
+
     // DBのクエリ生成
     var query = [ { 'team' : teamName } ];
     for (let i = 0; i < userArray.length; i++){
@@ -15,7 +21,7 @@ module.exports = function(teamName, userArray, callback){
 	    console.log(err);
 
 	if (target.length == 0){
-	    fcm(target[0].userid);
+	    fcm( target[0].userid, mesg );
 	}
 	callback(err);
     });

@@ -48,7 +48,9 @@ router.post('/sleeper', function(request, response){
 
     var userid = request.body.userid;
     var mesg = {
-	message : '眠たくてしょうがない人がいます!\n承認してください!'
+	id    : '1',
+	label : '眠たくてしょうがない人がいます!',
+	text  : '承認ボタンを押されたし!'
     };
 
     User.find({
@@ -100,7 +102,9 @@ router.post('/accept', function(request, response){
 		    if (teamInfo[0].user.length < teamInfo[0].userNum - 1){
 			// push通知の情報をしてpush通知
 			var mesg = {
-			    message : 'あなたは' + teamInfo[0].user.length - 1 + '番目に承認しました!'
+			    id    : '2',
+			    label : '承認完了',
+			    text  : 'あなたは' + teamInfo[0].user.length + 1 + '番目に承認しました!'
 			};
 			fcm( userFindResult[0].token, mesg );
 			

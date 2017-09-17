@@ -11,10 +11,7 @@ module.exports = function(query, mesg){
     const token = query;
 
     // data payload for notification
-    const data = {
-	title: 'Hello!',
-	body: dateString
-    };
+    const data = mesg;
 
     // data payload for data
     // const data = {
@@ -36,8 +33,8 @@ module.exports = function(query, mesg){
 	json: {
 	    // 'to': '/topics/Attendance_Android',
 	    'to': token,
-	    'notification': data // for notification
-	    // 'data': data      // for data
+	    // 'notification': data // for notification
+	    'data': data      // for data
 	}
     };
 
