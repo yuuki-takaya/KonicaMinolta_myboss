@@ -26,6 +26,12 @@ module.exports = function(teamName, userArray, callback){
 	if (target.length == 1){
 	    fcm( target[0].token, mesg );
 	}
+	else if (target.length > 1){
+	    for (let i = 0; i < target.length; i++){
+		fcm( target[i].token, mesg );
+	    }
+	}
+
 	callback(err);
     });
 };

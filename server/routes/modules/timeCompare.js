@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const User = require('../../models/userInfo');
 const Team = require('../../models/team');
+const fcm  = require('./fcm');
 
 module.exports = function(teamName){
 
@@ -23,6 +24,16 @@ module.exports = function(teamName){
 			console.log(err);
 		}
 	    );
+
+	    var mesg = {
+		id    : '4',
+		label : '起こしてください',
+		text  : 'Droneを起動します'
+	    };
+
+	    setTimeout(function(token, msg){
+		fcm( token, msg );
+	    }, 20*1000, firstUser[0].token, mesg);
 	});
 	
 	var user = [];
