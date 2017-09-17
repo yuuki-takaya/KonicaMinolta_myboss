@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is/values-is.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 257,
+                    "endOffset": 358
+                },
+                "from": {
+                    "file": "/Users/TSUKASA/.android/build-cache/831bddf40827f78b2fdf2b2ba38ce9ade55ec7ee/output/res/values-is/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 343,
+                        "endColumn": 257,
+                        "endOffset": 596
+                    }
+                }
+            }
+        ]
+    }
+]

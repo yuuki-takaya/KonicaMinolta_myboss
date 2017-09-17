@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/TSUKASA/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_4447f4e2c1acb3a2128ee1e3f92b7767aee4a110/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_80a42d082b3854a494a94f2002f92779dbec4faa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/TSUKASA/.android/build-cache/fb53a01b2f1527ea04fd28560330ee39b30b3842/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_294617057721656d9592a0dde7bddb2694616522/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/TSUKASA/.android/build-cache/30d88323ca95eb69242d106446d2a15b7e41d901/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8f06b3752f0f6e65471058341792195ba1acea9e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/TSUKASA/.android/build-cache/1c7d18f4433b119d63afb9d4789730964dd0f787/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3a1bac2cc31df44dbf1f9bbf2c675319503c9271">
+        <dex dex="/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1120c2daa05901ff8e14b538b3d6af93a85eb2d6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/TSUKASA/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_4aa6725611b1d2bab66640df6d23ec7b2f6c8f02/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b7323d60e35c6b950d927a96869c82d28cb0aee6">
+        <dex dex="/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_457de9d2468c126df10b3898bdc9413ef7fffbeb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/TSUKASA/.android/build-cache/27bbfd809277056feaa7ddafebb1bfadfcf3c8c3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/TSUKASA/Desktop/KonicaMinolta_myboss/android/KonicaMinolta_Hackathon v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_94b01447748ec88079c1a8169ff42ec33125deae/classes.dex" />
+    </item>
+
+</items>
